@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Happy Travel</string>
     <string name="hotel1_name">Aeolos Beach Hotel</string>
     <string name="local1">Karavostasi, Grécia</string>
     <string name="hotel2_name">Radisson Blu Hotel</string>
