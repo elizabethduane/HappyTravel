@@ -1,0 +1,11 @@
+<resources>
+    <string name="hotel1_name">Aeolos Beach Hotel</string>
+    <string name="local1">Karavostasi, Grécia</string>
+    <string name="hotel2_name">Radisson Blu Hotel</string>
+    <string name="local2">Istambul, Turquia</string>
+    <string name="hotel3_name"> Amazon Ecopark </string>
+    <string name="local3">Manaus, Brasil</string>
+    <string name="oferta">Ver oferta</string>
+    <string name="opcoes">Opções disponíveis</string>
+    <string name="slogan">"As melhores hospedagens para viagens mais felizes."</string>
+</resources>

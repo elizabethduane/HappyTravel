@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView_aeolos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/aeolos" />
+
+        <RelativeLayout
+            android:id="@+id/layout_info_aeolos"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView_nome_aeolos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel1_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textView_nota_aeolos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="8,1"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <ImageView
+                android:id="@+id/imageView_pin_aeolos"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/placeholder"
+                android:layout_below="@id/textView_nota_aeolos"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+
+                android:id="@+id/textView_local_aeolos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageView_pin_aeolos"
+                android:layout_below="@id/textView_nota_aeolos"
+                android:text="@string/local1"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+               />
+
+            <TextView
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 520"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView_preco_aeolos"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/textView_oferta_aeolos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oferta"
+                android:textSize="18sp"
+                android:layout_alignBottom="@+id/textView_preco_aeolos"
+                android:layout_alignParentRight="true"
+                android:onClick="openInfo"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView_radisson"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/radisson" />
+
+        <RelativeLayout
+            android:id="@+id/layout_info_radisson"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView_nome_radisson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel2_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textView_nota_radisson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="8,9"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <ImageView
+                android:id="@+id/imageView_pin_radisson"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/placeholder"
+                android:layout_below="@id/textView_nota_radisson"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+
+                android:id="@+id/textView_local_radisson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageView_pin_radisson"
+                android:layout_below="@id/textView_nota_radisson"
+                android:text="@string/local2"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 918"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView_preco_radisson"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/textView_oferta_radisson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oferta"
+                android:textSize="18sp"
+                android:layout_alignBottom="@+id/textView_preco_radisson"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_tropical"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ecopark" />
+
+        <RelativeLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView_nome_ecopark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel3_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textView_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="8,2"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <ImageView
+                android:id="@+id/imageView_pin"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/placeholder"
+                android:layout_below="@id/textView_nome_ecopark" />
+
+            <TextView
+
+                android:id="@+id/textView_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageView_pin"
+                android:layout_below="@id/textView_nome_ecopark"
+                android:text="@string/local3"
+                android:textSize="12sp"
+
+
+                />
+
+            <TextView
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 2500"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView_preco"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/textView_oferta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oferta"
+                android:textSize="18sp"
+                android:layout_alignBottom="@+id/textView_preco"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

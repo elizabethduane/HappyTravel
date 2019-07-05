@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoHotelActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_detalhe"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/aeolos" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcoes"
+            android:textSize="16dp"
+            android:layout_below="@+id/imageView_detalhe"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+
+            <TextView
+                android:id="@+id/textView_preco_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 331"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/textView_info_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quarto Individual "
+                android:layout_below="@id/textView_preco_1"/>
+
+            <Button
+                android:id="@+id/add_button_1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:layout_alignParentRight="true"
+                android:onClick="addButton"/>
+
+            <Button
+                android:id="@+id/sub_button_1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:layout_toLeftOf="@id/qt_textView_1"
+                android:onClick="subButton"
+                />
+
+            <TextView
+                android:id="@+id/qt_textView_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_toLeftOf="@id/add_button_1"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+
+            <TextView
+                android:id="@+id/textView_preco_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 520"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quarto Duplo "
+                android:layout_below="@id/textView_preco_2"/>
+
+            <Button
+                android:id="@+id/add_button_2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:layout_alignParentRight="true"
+                android:onClick="addButton"/>
+
+            <Button
+                android:id="@+id/sub_button_2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:layout_toLeftOf="@id/qt_textView_2"
+                android:onClick="subButton"
+
+                />
+
+            <TextView
+                android:id="@+id/qt_textView_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_toLeftOf="@id/add_button_2"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_diarias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantidade de Diárias: "
+                android:layout_alignBottom="@id/editText_qt_diarias"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/editText_qt_diarias"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView_diarias"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/textView_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 0,00 "
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/editText_qt_diarias"
+                android:textSize="24dp"
+                android:textColor="@color/colorAccent"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Digite seu e-mail"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reservar"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
